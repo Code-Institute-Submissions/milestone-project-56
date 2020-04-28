@@ -1,4 +1,15 @@
 #map {
     min-height: 360px;
-    
+    width: 100%;
+}
+
+.search {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.jumbotron {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-image: url("../images/carousel1.jpg");*/
 }
