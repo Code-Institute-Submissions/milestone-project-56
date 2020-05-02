@@ -2,64 +2,65 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Destination 4 You - MS2 </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fly Away</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 
 <body>
-  <!--Navbar-->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#home">Destinations 4 You</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="#">Destinations</a>
-        <a class="nav-item nav-link" href="#">Contact Us</a>
-      </div>
+    <div class="wrapper">
+        <header>
+
+            <nav>
+
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+
+                <div class="logo">
+                    Fly Away
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Find Destinations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
     </div>
-  </nav>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <section class="callout jumbotron text-center">
-          <h1 class="jumbotron-header">Flying around has never been this easy!</h1>
-          <hr class="block-divider">
-            <span class="d-inline d-sm-none"><br></span>
-            <strong><mark>The world is your oyster...</mark></strong></p>
-        </section>
-      </div>
-    </div>
-    <!-- Load icon library -->
-    <div class="row">
-      <div class="col-12">
-        <!-- Search Bar -->
-        <form class="search" action="action_page.php">
-          <input id="pac-input" type="text" placeholder="Search Destinations" name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <!--Map-->
+        <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
-            <div id="map"></div>
-          </div>
+            <div class="col-12">
+                <div class="search-bar">
+                    <h3>Find out what countries we are doing this year!</h3>
+                </div>
+                <form class="search" action="action_page.php">
+                    <input id="pac-input" type="text" placeholder="Search Destinations" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      </div>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVL99ULm3FzYy_6dZXfOGCvNqHb1cZn38&libraries=places&callback=initAutocomplete"
-         async defer></script>
-      <script src="assets/js/maps.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVL99ULm3FzYy_6dZXfOGCvNqHb1cZn38&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
