@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fly Away</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fly Away</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
       </div>
     </div>
   </nav>
-    <header class="masthead" style="background-image: url('beach.jpg')">
+  <header class="masthead" style="background-image: url('beach.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -47,31 +47,57 @@
       </div>
     </div>
   </header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="search-text">
-                    <h3>Find out what countries we are doing this year!</h3>
-                </div>
-                <form class="search" action="action_page.php">
-                    <input id="pac-input" type="text" placeholder="Search Destinations" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-                <div class="row">
-                    <div class="col-12">
-                        <div id="map"></div>
-                    </div>
-                </div>
-            </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <h3 class="search-text">Find out what countries we are doing this year!</h3>
         </div>
+        <hr class="break">
+        <form class="search" action="action_page.php">
+          <input id="pac-input" type="text" placeholder="Search Destinations" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="row">
+          <div class="col-12">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVL99ULm3FzYy_6dZXfOGCvNqHb1cZn38&libraries=places&callback=initAutocomplete" async defer></script>
-    <script src="assets/js/maps.js"></script>
-    <script src="assets/js/script.js"></script>
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <h3 class="enquire-text">Enquire with us today!</h3>
+        </div>
+        <hr class="break">
+        <form>
+          <div class="form">
+            <input type="text" class="form-control" placeholder="First name" required>
+          </div>
+          <div class="form">
+            <input type="text" class="form-control" placeholder="Last name" required>
+          </div>
+          <div class="form">
+            <input type="email" class="form-control" placeholder="name@example.com" required>
+          </div>
+          <div class="form">
+            <input type="tel" class="form-control" placeholder="Phone Number" required>
+          </div>
+          <div class="sub-btn">
+            <button type="submit" value="Submit" class="btn btn-primary">Enquire</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVL99ULm3FzYy_6dZXfOGCvNqHb1cZn38&libraries=places&callback=initAutocomplete" async defer></script>
+  <script src="assets/js/maps.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

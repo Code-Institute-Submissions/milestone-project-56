@@ -1,5 +1,6 @@
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 /*-----Navbar-----*/
@@ -13,7 +14,7 @@ body {
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: #343a40;
+  color: #91C7ED;
 }
 
 #mainNav .navbar-toggler {
@@ -21,7 +22,7 @@ body {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #343a40;
+  color: #91C7ED;
 }
 
 #mainNav .navbar-nav>li.nav-item>a {
@@ -70,18 +71,18 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #91C7ED;
   }
   #mainNav.is-fixed .navbar-brand:focus,
   #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
+    color: #4894C6;
   }
   #mainNav.is-fixed .navbar-nav>li.nav-item>a {
-    color: #212529;
+    color: #91C7ED;
   }
   #mainNav.is-fixed .navbar-nav>li.nav-item>a:focus,
   #mainNav.is-fixed .navbar-nav>li.nav-item>a:hover {
-    color: #0085A1;
+    color: #4894C6;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -188,25 +189,60 @@ header.masthead .post-heading .meta a {
   }
 }
 
-
 /*-----Search Bar-----*/
 
 .search-text {
   padding: 0;
   text-align: center;
-  font-family: 'Helvetica Neue';
-  font-weight: 100;
+  color: #91C7ED;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 .search {
   text-align: center;
+  font-family: 'Trebuchet MS', 'Helvetica Neue';
   padding-bottom: 15px;
   padding-top: 15px;
+
 }
+
 
 /*-----Map-----*/
 
 #map {
   min-height: 460px;
   width: 100%;
+}
+
+
+
+
+
+/*-----Form-----*/
+
+.enquire-text {
+  padding-top: 2em;
+  text-align: center;
+  color: #91C7ED;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.form {
+  padding-top: 1em;
+  font-family: 'Trebuchet MS', 'Helvetica Neue';
+}
+
+.sub-btn {
+  font-family: 'Trebuchet MS', 'Helvetica Neue';
+  text-align: center;
+  padding-top: 1em;
+}
+
+/*-----Break-----*/
+
+.break {
+  background-color: #4894C6;
+  width: 30%;
 }
