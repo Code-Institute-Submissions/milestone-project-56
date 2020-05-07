@@ -207,6 +207,13 @@ header.masthead .post-heading .meta a {
 
 }
 
+#pac-input {
+  border-radius: 10px;
+}
+
+.button {
+  border-radius: 10px;
+}
 
 /*-----Map-----*/
 
@@ -216,7 +223,51 @@ header.masthead .post-heading .meta a {
 }
 
 
+/*-----Dropdown Box-----*/
 
+.dropbtn {
+  background-color: #91C7ED;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #4894C6;
+}
+
+.dropdown {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  text-align: center;
+  background-color: #91C7ED;
+  min-width: 150px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #4894C6;
+}
+
+.show {
+  display: block;
+}
 
 
 /*-----Form-----*/
@@ -246,3 +297,4 @@ header.masthead .post-heading .meta a {
   background-color: #4894C6;
   width: 30%;
 }
+

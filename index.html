@@ -34,14 +34,14 @@
       </div>
     </div>
   </nav>
-  <header class="masthead" style="background-image: url('beach.jpg')">
+  <header class="masthead" style="background-image: url('assets/images/beach.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h1>Flying around has never been this easy!</h1>
-            <span class="subheading">The world is your oyster</span>
+            <span class="subheading">With our help, we'll find you the perfect package for your holiday!</span>
           </div>
         </div>
       </div>
@@ -56,11 +56,25 @@
         <hr class="break">
         <form class="search" action="action_page.php">
           <input id="pac-input" type="text" placeholder="Search Destinations" name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
+          <button class="button" type="submit"><i class="fa fa-search"></i></button>
         </form>
         <div class="row">
           <div class="col-12">
             <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Select Location</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">France, Paris</a>
+            <a href="#">Germany, Berlin</a>
+            <a href="#">Greece, Athens</a>
+            <a href="#">Italy, Pisa</a>
+            <a href="#">Turkey, Istanbul</a>
           </div>
         </div>
       </div>
