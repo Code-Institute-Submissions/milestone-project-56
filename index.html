@@ -9,6 +9,23 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init('user_5RQzs4TkC7ONQt5taf01s');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_form', this);
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -69,14 +86,25 @@
       <div class="col-12">
         <div class="dropdown">
           <button onclick="myFunction()" class="dropbtn">Select Location</button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#">France, Paris</a>
-            <a href="#">Germany, Berlin</a>
-            <a href="#">Greece, Athens</a>
-            <a href="#">Italy, Pisa</a>
-            <a href="#">Turkey, Istanbul</a>
-          </div>
+        <select id="myDropdown">
+        <option value="paris">France</option>
+        <option value="berlin">Germany</option>
+        </select>
         </div>
+      </div>
+    </div>
+    <div id="paris" class="row">
+      <div class="col-12">
+        <h1>
+          This
+        </h1>
+      </div>
+    </div>
+      <div id="berlin" class="row">
+      <div class="col-12">
+        <h1>
+          That
+        </h1>
       </div>
     </div>
     <div class="row">
@@ -85,33 +113,65 @@
           <h3 class="enquire-text">Enquire with us today!</h3>
         </div>
         <hr class="break">
-        <form>
-          <div class="form">
-            <input type="text" class="form-control" placeholder="First name" required>
+        <form id="myform" method="post">
+          <div class="form" id="contact-form">
+            <input type="text" class="form-control" name="full name" placeholder="Full name" required>
           </div>
           <div class="form">
-            <input type="text" class="form-control" placeholder="Last name" required>
+            <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
           </div>
           <div class="form">
-            <input type="email" class="form-control" placeholder="name@example.com" required>
+            <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
           </div>
-          <div class="form">
-            <input type="tel" class="form-control" placeholder="Phone Number" required>
+          <div class="form-group form">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option selected>Pick a destination</option>
+      <option>France, Paris</option>
+      <option>Germany, Berlin</option>
+      <option>Greece, Athens</option>
+      <option>Italy, Pisa</option>
+      <option>Turkey, Istanbul</option>
+    </select>
           </div>
-          <div class="sub-btn">
-            <button type="submit" value="Submit" class="btn btn-primary">Enquire</button>
-          </div>
+          <div class="position">
+    <button class="border-btn">Send</button>
+    </div>
         </form>
+    <form id="myform" method="post">
       </div>
     </div>
+    <footer>
+      <div class="row footer">
+        <div class="col-sm-6">
+          <h6 class="footer-header">Contact Us</h6>
+          <ul class="footer-list">
+            <li>0123 4567 891</li>
+            <li>FlyAway@NNN.com</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h6 class="footer-header">Social</h6>
+          <ul class="list-inline social-links">
+            <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com"><i></i></a>
+            </li>
+            <li class="list-inline-item"><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x fa-fw"></i></a>
+              <li class="list-inline-item"><a target="_blank" href="https://en-gb.facebook.com/"><i class="fab fa-facebook-f fa-2x fa-fw"></i></a>
+                <li class="list-inline-item"><a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-2x fa-fw"></i></a>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVL99ULm3FzYy_6dZXfOGCvNqHb1cZn38&libraries=places&callback=initAutocomplete" async defer></script>
+  <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVL99ULm3FzYy_6dZXfOGCvNqHb1cZn38&callback=initMap"></script>-->
   <script src="assets/js/maps.js"></script>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/contact.js"></script>
 </body>
 
 </html>

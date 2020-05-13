@@ -226,6 +226,7 @@ header.masthead .post-heading .meta a {
 /*-----Dropdown Box-----*/
 
 .dropbtn {
+  border-radius: 10px;
   background-color: #91C7ED;
   color: white;
   padding: 16px;
@@ -245,13 +246,16 @@ header.masthead .post-heading .meta a {
 }
 
 .dropdown-content {
+  border-radius: 10px;
   display: none;
   text-align: center;
   background-color: #91C7ED;
-  min-width: 150px;
+  font-size: 12px;
+  width: 143px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin: auto;
 }
 
 .dropdown-content a {
@@ -285,10 +289,49 @@ header.masthead .post-heading .meta a {
   font-family: 'Trebuchet MS', 'Helvetica Neue';
 }
 
-.sub-btn {
-  font-family: 'Trebuchet MS', 'Helvetica Neue';
+.position {
   text-align: center;
   padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: 'Trebuchet MS', 'Helvetica Neue';
+}
+
+.border-btn {
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+}
+
+
+/*-----Footer-----*/
+
+.col-sm-6 {
+  position: relative;
+  top: 12px;
+  height: 100px;
+  font-family:'Trebuchet MS', 'Helvetica Neue';
+  color: white;
+}
+
+
+.footer {
+  text-align: center;
+  background-color:#91C7ED;
+}
+
+.footer-header{
+  font-weight: bold;
+  font-size: larger;
+}
+
+.footer-list {
+  position: relative;
+  right: 21px;
+  list-style-type: none;
+}
+
+.social-links {
+    position: relative;
+  right: 8px;
 }
 
 /*-----Break-----*/
@@ -298,3 +341,10 @@ header.masthead .post-heading .meta a {
   width: 30%;
 }
 
+#paris {
+  display: none;
+}
+
+#berlin {
+  display: none;
+}

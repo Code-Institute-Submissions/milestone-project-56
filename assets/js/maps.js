@@ -5,7 +5,8 @@
           zoom: 3,
           mapTypeId: 'roadmap'
         });
-        
+//Cluster Markers
+            
             var locations = [
         { lat: 43.7228, lng: 10.4017 },
         { lat: 41.015609, lng: 28.985123},
@@ -26,7 +27,7 @@
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
         
 
-
+// Linking Search Bar with map
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
         var searchBox = new google.maps.places.SearchBox(input);
@@ -88,3 +89,38 @@
       }
       
       
+// Adding information of countries to maps
+
+// function initMap() {
+//         var berlin = {lat: 52.5200, lng: 13.4050 };
+//         var map = new google.maps.Map(document.getElementById('map'), {
+//           zoom: 4,
+//           center: berlin
+//         });
+
+//         var contentString = '<div id="content">'+
+//             '<div id="siteNotice">'+
+//             '</div>'+
+//             '<h1 id="firstHeading" class="firstHeading">Berlin</h1>'+
+//             '<div id="bodyContent">'+
+//             '<p><b>Berlin</b>, is the capital and largest city of Germany by both area and population. ' +
+//             'Its 3,769,495 (2019) inhabitants make it the most populous city proper of the European Union. '+
+//             '<p><a href="https://en.wikipedia.org/wiki/Berlin">'+
+//             'Read More</a> '+
+//             '</p>'+
+//             '</div>'+
+//             '</div>';
+
+//         var infowindow = new google.maps.InfoWindow({
+//           content: contentString
+//         });
+
+//         var marker = new google.maps.Marker({
+//           position: Berlin,
+//           map: map,
+//           title: 'Berlin'
+//         });
+//         marker.addListener('click', function() {
+//           infowindow.open(map, marker);
+//         });
+//       }

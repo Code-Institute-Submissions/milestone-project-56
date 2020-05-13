@@ -48,9 +48,20 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  disappear();
+ city=document.querySelector("#myDropdown");
+ output=city.value;
+ if (output=="paris"){
+   document.getElementById("paris").style.display="block";
+ }
+  if (output=="berlin"){
+   document.getElementById("berlin").style.display="block";
+ }
 }
-
+function disappear() {
+   document.getElementById("paris").style.display="none";
+   document.getElementById("berlin").style.display="none";
+}
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
