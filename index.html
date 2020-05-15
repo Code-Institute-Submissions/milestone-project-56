@@ -11,27 +11,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-           emailjs.init('user_5RQzs4TkC7ONQt5taf01s');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate the contact number value
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm('contact_service', 'contact_form', this);
-            });
-        }
-    </script>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Fly Away</a>
+      <a class="navbar-brand" href="#homepage">Fly Away</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -39,18 +24,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="#homepage">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Find Destinations</a>
+            <a class="nav-link" href="#destination">Find Destinations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <a id="homepage"></a>
   <header class="masthead" style="background-image: url('assets/images/beach.jpg')">
     <div class="overlay"></div>
     <div class="container">
@@ -64,53 +50,122 @@
       </div>
     </div>
   </header>
+  <a id="destination"></a>
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div>
           <h3 class="search-text">Find out what countries we are doing this year!</h3>
         </div>
-        <hr class="break">
-        <form class="search" action="action_page.php">
-          <input id="pac-input" type="text" placeholder="Search Destinations" name="search">
-          <button class="button" type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <div class="row">
-          <div class="col-12">
-            <div id="map"></div>
-          </div>
-        </div>
       </div>
     </div>
+    <hr class="break">
+    <form class="search" action="action_page.php">
+      <input id="pac-input" type="text" placeholder="Search Destinations" name="search">
+      <button class="button" type="submit"><i class="fa fa-search"></i></button>
+    </form>
     <div class="row">
       <div class="col-12">
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Select Location</button>
-        <select id="myDropdown">
-        <option value="paris">France</option>
-        <option value="berlin">Germany</option>
-        </select>
-        </div>
-      </div>
-    </div>
-    <div id="paris" class="row">
-      <div class="col-12">
-        <h1>
-          This
-        </h1>
-      </div>
-    </div>
-      <div id="berlin" class="row">
-      <div class="col-12">
-        <h1>
-          That
-        </h1>
+        <div id="map"></div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
         <div>
-          <h3 class="enquire-text">Enquire with us today!</h3>
+          <h3 class="heading-text">See what activies were doing for each country!</h3>
+        </div>
+      </div>
+    </div>
+    <hr class="break">
+    <div class="row">
+      <div class="col-12">
+        <div class="dropdown">
+          <select id="myDropdown">
+        <option value="paris">France, Paris</option>
+        <option value="berlin">Germany, Berlin</option>
+        <option value="athens">Greece, Athens</option>
+        <option value="pisa">Italy, Pisa</option>
+        <option value="istanbul">Turkey, Istanbul</option>
+        </select>
+          <button onclick="myFunction()" class="dropbtn">Select Location</button>
+        </div>
+      </div>
+    </div>
+    <div id="paris">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/eiffel-tower.jpeg" alt="Eiffel Tower">
+            <div class="card-body">
+              <h4 class="card-heading-center">View the Eiffel Tower</h4>
+              <p class="card-text">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.</p>
+              <button class="info-btn" href="https://en.wikipedia.org/wiki/Eiffel_Tower" target="_blank">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/musee-paris.jpg" alt="Musee museum">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Musée d'Orsay Museum</h4>
+              <p class="card-text">The Musée d'Orsay is a museum in Paris, France, on the Left Bank of the Seine. It is housed in the former Gare d'Orsay, a Beaux-Arts railway station built between 1898 and 1900. The museum holds mainly French art dating from 1848 to 1914,
+                including paintings, sculptures, furniture, and photography.</p>
+              <button class="info-btn" href="https://en.wikipedia.org/wiki/Mus%C3%A9e_d'Orsay" target="_blank">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/zipline-paris.jpg" alt="Zipline on Eiffel Tower">
+            <div class="card-body">
+              <h4 class="card-heading-center">Ziplining on the Eiffel Tower</h4>
+              <p class="card-text">A zipline ride from the Eiffel Tower is offering thrill-seekers an opportunity to speed across the Paris skyline at 90 kilometres per hour. The temporary zipline is an initiative by French mineral water brand Perrier in order to celebrate
+                the French Open, and coinciding with the 130th anniversary of the Eiffel Tower.</p>
+              <button class="info-btn" href="https://www.toureiffel.paris/en/news/events/zip-line-eiffel-tower" target="_blank">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="berlin">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/brandenburg.jpg" alt="Brandenburg Gate">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Brandenburg Gate monument</h4>
+              <p class="card-text">The Brandenburg Gate is an 18th-century neoclassical monument in Berlin, built on the orders of Prussian king Frederick William II after the temporary restoration of order during the Batavian Revolution.</p>
+              <button class="info-btn" href="https://en.wikipedia.org/wiki/Brandenburg_Gate" target="_blank">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/pergamonmuseum.jpg" alt="Pergamon Museum">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Pergamon Museum</h4>
+              <p class="card-text">The Pergamon Museum is situated on the Museum Island in Berlin. The building was designed by Alfred Messel and Ludwig Hoffmann and was constructed over a period of twenty years, from 1910 to 1930.</p>
+              <button class="info-btn" href="https://en.wikipedia.org/wiki/Pergamon_Museum" target="_blank">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/strandbad.jpg" alt="Strandbad Wannsee">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Strandbad Wannsee beach</h4>
+              <p class="card-text">The Strandbad Wannsee is an open-air lido on the eastern shore of Großer Wannsee lake, a large bay of the Havel river in Berlin, Germany. Opened in 1907, it is one of the largest inland lidos in Europe, with a beach that is 1,275 metres long and 80 metres wide, replenished with sand from the Baltic coast.</p>
+              <button class="info-btn" href="https://en.wikipedia.org/wiki/Strandbad_Wannsee" target="_blank">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="contact"></a>
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <h3 class="heading-text">Enquire with us today!</h3>
         </div>
         <hr class="break">
         <form id="myform" method="post">
@@ -134,10 +189,10 @@
     </select>
           </div>
           <div class="position">
-    <button class="border-btn">Send</button>
-    </div>
+            <button class="border-btn">Send</button>
+          </div>
         </form>
-    <form id="myform" method="post">
+        <form id="myform" method="post">
       </div>
     </div>
     <footer>

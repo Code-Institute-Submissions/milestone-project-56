@@ -57,6 +57,15 @@ function myFunction() {
   if (output=="berlin"){
    document.getElementById("berlin").style.display="block";
  }
+   if (output=="athens"){
+   document.getElementById("berlin").style.display="block";
+ }
+   if (output=="pisa"){
+   document.getElementById("berlin").style.display="block";
+ }
+   if (output=="istanbul"){
+   document.getElementById("berlin").style.display="block";
+ }
 }
 function disappear() {
    document.getElementById("paris").style.display="none";
@@ -75,3 +84,9 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+
+
+
+
