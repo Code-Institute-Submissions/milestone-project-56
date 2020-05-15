@@ -306,6 +306,15 @@ header.masthead .post-heading .meta a {
 }
 
 /*-----Cards-----*/
+#fade1 {
+  display: none;
+}
+#fade2 {
+  display: none;
+}
+#fade3 {
+  display: none;
+}
 .card {
   height: 600px;
 }

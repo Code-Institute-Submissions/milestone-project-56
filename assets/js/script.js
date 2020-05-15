@@ -12,7 +12,7 @@
     $(this).removeClass("floating-label-form-group-with-focus");
   });
 
-// Show the navbar when the page is scrolled up
+  // Show the navbar when the page is scrolled up
   var MQL = 992;
 
   //primary navigation slide-in effect
@@ -28,10 +28,12 @@
           //if scrolling up...
           if (currentTop > 0 && $('#mainNav').hasClass('is-fixed')) {
             $('#mainNav').addClass('is-visible');
-          } else {
+          }
+          else {
             $('#mainNav').removeClass('is-visible is-fixed');
           }
-        } else if (currentTop > this.previousTop) {
+        }
+        else if (currentTop > this.previousTop) {
           //if scrolling down...
           $('#mainNav').removeClass('is-visible');
           if (currentTop > headerHeight && !$('#mainNav').hasClass('is-fixed')) $('#mainNav').addClass('is-fixed');
@@ -49,27 +51,28 @@
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   disappear();
- city=document.querySelector("#myDropdown");
- output=city.value;
- if (output=="paris"){
-   document.getElementById("paris").style.display="block";
- }
-  if (output=="berlin"){
-   document.getElementById("berlin").style.display="block";
- }
-   if (output=="athens"){
-   document.getElementById("berlin").style.display="block";
- }
-   if (output=="pisa"){
-   document.getElementById("berlin").style.display="block";
- }
-   if (output=="istanbul"){
-   document.getElementById("berlin").style.display="block";
- }
+  city = document.querySelector("#myDropdown");
+  output = city.value;
+  if (output == "paris") {
+    document.getElementById("paris").style.display = "block";
+  }
+  if (output == "berlin") {
+    document.getElementById("berlin").style.display = "block";
+  }
+  if (output == "athens") {
+    document.getElementById("berlin").style.display = "block";
+  }
+  if (output == "pisa") {
+    document.getElementById("berlin").style.display = "block";
+  }
+  if (output == "istanbul") {
+    document.getElementById("berlin").style.display = "block";
+  }
 }
+
 function disappear() {
-   document.getElementById("paris").style.display="none";
-   document.getElementById("berlin").style.display="none";
+  document.getElementById("paris").style.display = "none";
+  document.getElementById("berlin").style.display = "none";
 }
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
@@ -88,5 +91,10 @@ window.onclick = function(event) {
 
 
 
-
-
+$(document).ready(function() {
+  $(".dropbtn").click(function() {
+    $("#fade1").fadeIn(2000);
+    $("#fade2").fadeIn(2500);
+    $("#fade3").fadeIn(3000);
+  });
+});
