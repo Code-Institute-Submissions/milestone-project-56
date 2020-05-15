@@ -30,6 +30,7 @@ body {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #91C7ED;
 }
 
 @media only screen and (min-width: 992px) {
@@ -239,6 +240,7 @@ header.masthead .post-heading .meta a {
   font-size: 14px;
   border: none;
   cursor: pointer;
+  transition-duration: 2s;
 }
 
 .dropbtn:hover,
@@ -285,10 +287,10 @@ header.masthead .post-heading .meta a {
   padding-top: 1em;
 }
 
-#berlin {
-  display: none;
-  padding-top: 1em;
-}
+/*#berlin {*/
+/*  display: none;*/
+/*  padding-top: 1em;*/
+/*}*/
 
 #athens {
   display: none;
@@ -306,24 +308,32 @@ header.masthead .post-heading .meta a {
 }
 
 /*-----Cards-----*/
+
 #fade1 {
   display: none;
+  background-color: #91C7ED;
 }
+
 #fade2 {
   display: none;
+  background-color: #91C7ED;
 }
+
 #fade3 {
   display: none;
+  background-color: #91C7ED;
 }
+
 .card {
   height: 600px;
 }
+
 .card-img-top {
   height: 20em;
 }
+
 .card-body {
   font-family: 'Trebuchet MS', 'Helvetica Neue';
-  background-color: #91C7ED;
   color: white;
 }
 

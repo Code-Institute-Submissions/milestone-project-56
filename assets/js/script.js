@@ -89,12 +89,12 @@ window.onclick = function(event) {
 }
 
 
-
+//Fade in bootstrap cards
 
 $(document).ready(function() {
   $(".dropbtn").click(function() {
     $("#fade1").fadeIn(2000);
-    $("#fade2").fadeIn(2500);
-    $("#fade3").fadeIn(3000);
+    $("#fade2").fadeIn(3000);
+    $("#fade3").fadeIn(4000);
   });
 });
