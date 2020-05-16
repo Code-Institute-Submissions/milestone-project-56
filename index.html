@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
+  <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="#homepage">Fly Away</a>
@@ -36,6 +37,7 @@
       </div>
     </div>
   </nav>
+  <!--TITLE-->
   <a id="homepage"></a>
   <header class="masthead" style="background-image: url('assets/images/beach.jpg')">
     <div class="overlay"></div>
@@ -50,6 +52,7 @@
       </div>
     </div>
   </header>
+  <!--SEARCH BAR-->
   <a id="destination"></a>
   <div class="container-fluid">
     <div class="row">
@@ -64,11 +67,13 @@
       <input id="pac-input" type="text" placeholder="Search Destinations" name="search">
       <button class="button" type="submit"><i class="fa fa-search"></i></button>
     </form>
+    <!--MAP-->
     <div class="row">
       <div class="col-12">
         <div id="map"></div>
       </div>
     </div>
+    <!--DROPDOWN BOX-->
     <div class="row">
       <div class="col-12">
         <div>
@@ -91,10 +96,11 @@
         </div>
       </div>
     </div>
+    <!--BOOTSTRAP CARDS FOR EACH COUNTRY-->
     <div id="paris">
       <div class="row">
         <div class="col-12 col-lg-4">
-          <div class="card" id="fade1">
+          <div class="card fade1">
             <img class="card-img-top" src="assets/images/eiffel-tower.jpeg" alt="Eiffel Tower">
             <div class="card-body">
               <h4 class="card-heading-center">View the Eiffel Tower</h4>
@@ -104,7 +110,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <div class="card" id="fade2">
+          <div class="card fade2">
             <img class="card-img-top" src="assets/images/musee-paris.jpg" alt="Musee museum">
             <div class="card-body">
               <h4 class="card-heading-center">Visit the Musée d'Orsay Museum</h4>
@@ -115,7 +121,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <div class="card" id="fade3">
+          <div class="card fade3">
             <img class="card-img-top" src="assets/images/zipline-paris.jpg" alt="Zipline on Eiffel Tower">
             <div class="card-body">
               <h4 class="card-heading-center">Ziplining on the Eiffel Tower</h4>
@@ -130,7 +136,7 @@
     <div id="berlin">
       <div class="row">
         <div class="col-12 col-lg-4">
-          <div class="card" id="fade1">
+          <div class="card fade1">
             <img class="card-img-top" src="assets/images/brandenburg.jpg" alt="Brandenburg Gate">
             <div class="card-body">
               <h4 class="card-heading-center">Visit the Brandenburg Gate monument</h4>
@@ -140,7 +146,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <div class="card" id="fade2">
+          <div class="card fade2">
             <img class="card-img-top" src="assets/images/pergamonmuseum.jpg" alt="Pergamon Museum">
             <div class="card-body">
               <h4 class="card-heading-center">Visit the Pergamon Museum</h4>
@@ -150,17 +156,124 @@
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <div class="card" id="fade3">
+          <div class="card fade3">
             <img class="card-img-top" src="assets/images/strandbad.jpg" alt="Strandbad Wannsee">
             <div class="card-body">
               <h4 class="card-heading-center">Visit the Strandbad Wannsee beach</h4>
-              <p class="card-text">The Strandbad Wannsee is an open-air lido on the eastern shore of Großer Wannsee lake, a large bay of the Havel river in Berlin, Germany. Opened in 1907, it is one of the largest inland lidos in Europe, with a beach that is 1,275 metres long and 80 metres wide, replenished with sand from the Baltic coast.</p>
+              <p class="card-text">The Strandbad Wannsee is an open-air lido on the eastern shore of Großer Wannsee lake, a large bay of the Havel river in Berlin, Germany. Opened in 1907, it is one of the largest inland lidos in Europe, with a beach that is 1,275 metres
+                long and 80 metres wide, replenished with sand from the Baltic coast.</p>
               <a class="info-btn" href="https://en.wikipedia.org/wiki/Strandbad_Wannsee" target="_blank">Read More</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div id="athens">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card fade1">
+            <img class="card-img-top" src="assets/images/acropolis.jpg" alt="Acropolis Museum">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Acropolis Museum</h4>
+              <p class="card-text">The Acropolis Museum is an archaeological museum focused on the findings of the archaeological site of the Acropolis of Athens. The museum was built to house every artifact found on the rock and on the surrounding slopes, from the Greek
+                Bronze Age to Roman and Byzantine Greece.</p>
+              <a class="info-btn" href="https://en.wikipedia.org/wiki/Acropolis_Museum" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card fade2">
+            <img class="card-img-top" src="assets/images/lycabettus.jpg" alt="Mount Lycabettus">
+            <div class="card-body">
+              <h4 class="card-heading-center">Hike the Mount Lycabettus</h4>
+              <p class="card-text">Mount Lycabettus, also known as Lycabettos, Lykabettos or Lykavittos, is a Cretaceous limestone hill in the Greek capital Athens. At 300 meters above sea level, its summit is the highest point in Athens and pine trees cover its base. </p>
+              <a class="info-btn" href="https://en.wikipedia.org/wiki/Mount_Lycabettus" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card fade3">
+            <img class="card-img-top" src="assets/images/astir.jpg" alt="Astir Beach Club">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Astir Beach Club</h4>
+              <p class="card-text">Astir Beach, both in allure and location, has been hosting the Athenian elite as well as international VIPs for decades. Designed by the prominent Greek architect Kostas Voutsinas, Astir sets an unprecedented aesthetic standard, introducing
+                its trademark colorful beach umbrellas and the seagull-inspired beach shades among myriad others.</p>
+              <a class="info-btn" href="https://www.astir.gr/beach/" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pisa">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card fade1">
+            <img class="card-img-top" src="assets/images/leaning-tower.jpeg" alt="Leaning tower of Pisa">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Leaning tower of Pisa</h4>
+              <p class="card-text">The Leaning Tower of Pisa or simply the Tower of Pisa is the campanile, or freestanding bell tower, of the cathedral of the Italian city of Pisa, known worldwide for its nearly four-degree lean, the result of an unstable foundation.</p>
+              <a class="info-btn" href="https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card fade2">
+            <img class="card-img-top" src="assets/images/piazza.jpg" alt="Piazza del duomo">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Pizza Del</h4>
+              <p class="card-text">Florence Cathedral, formally the Cattedrale di Santa Maria del Fiore, is the cathedral of Florence, Italy. It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed by 1436, with the dome engineered
+                by Filippo Brunelleschi.</p>
+              <a class="info-btn" href="https://en.wikipedia.org/wiki/Florence_Cathedral" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card fade3">
+            <img class="card-img-top" src="assets/images/campo-santo.jpg" alt="Campo Santo">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Campo Santo</h4>
+              <p class="card-text">The Campo Santo, also known as Camposanto Monumentale or Camposanto Vecchio, is a historical edifice at the northern edge of the Cathedral Square in Pisa, Italy.</p>
+              <a class="info-btn" href="https://en.wikipedia.org/wiki/Camposanto_Monumentale_di_Pisa" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <div id="istanbul">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card fade1">
+            <img class="card-img-top" src="assets/images/bazaar.jpg" alt="Istanbul grand bazaar">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Grand Bazaar</h4>
+              <p class="card-text">The Grand Bazaar in Istanbul is one of the largest and oldest covered markets in the world, with 61 covered streets and over 4,000 shops on a total area of 30,700 m2, attracting between 250,000 and 400,000 visitors daily. In 2014, it was listed No.1 among the world's most-visited tourist attractions with 91,250,000 annual visitors. The Grand Bazaar at Istanbul is often regarded as one of the first shopping malls of the world.</p>
+              <a class="info-btn" href="https://en.wikipedia.org/wiki/Grand_Bazaar,_Istanbul" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card fade2">
+            <img class="card-img-top" src="assets/images/hagia.jpg" alt="Hagia Sophia">
+            <div class="card-body">
+              <h4 class="card-heading-center">Visit the Hagia Sophia</h4>
+              <p class="card-text">Hagia Sophia is the former Greek Orthodox Christian patriarchal cathedral, later an Ottoman imperial mosque and now a museum in Istanbul, Turkey. Built in AD 537, during the reign of Justinian. It is famous for its large dome. It was the world's largest building and an engineering marvel of its time. </p>
+              <a class="info-btn" href="https://en.wikipedia.org/wiki/Hagia_Sophia" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+                <div class="col-12 col-lg-4">
+          <div class="card fade3">
+            <img class="card-img-top" src="assets/images/cappadocia.jpg" alt="Cappadocia Hot air balloon">
+            <div class="card-body">
+              <h4 class="card-heading-center">View the skies on a Hot Air Balloon in Cappadocia</h4>
+              <p class="card-text"><em>A 1 and a half hour flight from istanbul to Cappadocia (paid for by us)</em>Cappadocia’s breathtaking landscape makes it a top global destination for balloon flights. The terrific flying conditions allow for amazing views of the spectacular, surrealistic landscapes. You’ll gently drift over and between fairy chimneys, pigeon houses hewn into the unique rock formations, orchards and vineyards. You’ll float through impressive valleys, each with distinctive rock formations, colors and features and then drift up over rippled ravines for breathtaking views over the region.</p>
+              <a class="info-btn" href="https://www.hotairballooncappadocia.com/Cappadocia-Balloon-Tours.html" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <!--CONTACT FORM-->
     <a id="contact"></a>
     <div class="row">
       <div class="col-12">
@@ -192,9 +305,9 @@
             <button class="border-btn">Send</button>
           </div>
         </form>
-        <form id="myform" method="post">
       </div>
     </div>
+    <!--FOOTER-->
     <footer>
       <div class="row footer">
         <div class="col-sm-6">
@@ -218,12 +331,11 @@
       </div>
     </footer>
   </div>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVL99ULm3FzYy_6dZXfOGCvNqHb1cZn38&libraries=places&callback=initAutocomplete" async defer></script>
-  <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVL99ULm3FzYy_6dZXfOGCvNqHb1cZn38&callback=initMap"></script>-->
   <script src="assets/js/maps.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/contact.js"></script>

@@ -287,10 +287,10 @@ header.masthead .post-heading .meta a {
   padding-top: 1em;
 }
 
-/*#berlin {*/
-/*  display: none;*/
-/*  padding-top: 1em;*/
-/*}*/
+#berlin {
+  display: none;
+  padding-top: 1em;
+}
 
 #athens {
   display: none;
@@ -309,17 +309,17 @@ header.masthead .post-heading .meta a {
 
 /*-----Cards-----*/
 
-#fade1 {
+.fade1 {
   display: none;
   background-color: #91C7ED;
 }
 
-#fade2 {
+.fade2 {
   display: none;
   background-color: #91C7ED;
 }
 
-#fade3 {
+.fade3 {
   display: none;
   background-color: #91C7ED;
 }

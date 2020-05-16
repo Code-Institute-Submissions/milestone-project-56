@@ -93,8 +93,8 @@ window.onclick = function(event) {
 
 $(document).ready(function() {
   $(".dropbtn").click(function() {
-    $("#fade1").fadeIn(2000);
-    $("#fade2").fadeIn(3000);
-    $("#fade3").fadeIn(4000);
+    $(".fade1").fadeIn(2000);
+    $(".fade2").fadeIn(3000);
+    $(".fade3").fadeIn(4000);
   });
 });
