@@ -1,45 +1,42 @@
+html {
+  font-size: 10px;
+}
 body {
   padding: 0;
   margin: 0;
 }
-
 /*-----Navbar-----*/
-
 #mainNav {
   position: absolute;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: .1rem solid #e9ecef;
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 #mainNav .navbar-brand {
   font-weight: 800;
   color: #91C7ED;
 }
-
 #mainNav .navbar-toggler {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 800;
-  padding: 13px;
+  padding: 1.3rem;
   text-transform: uppercase;
   color: #91C7ED;
 }
-
 #mainNav .navbar-nav>li.nav-item>a {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   color: #91C7ED;
 }
-
 @media only screen and (min-width: 992px) {
   #mainNav {
-    border-bottom: 1px solid transparent;
+    border-bottom: .1rem solid transparent;
     background: transparent;
   }
   #mainNav .navbar-brand {
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     color: #fff;
   }
   #mainNav .navbar-brand:focus,
@@ -47,7 +44,7 @@ body {
     color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .navbar-nav>li.nav-item>a {
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     color: #fff;
   }
   #mainNav .navbar-nav>li.nav-item>a:focus,
@@ -55,7 +52,6 @@ body {
     color: rgba(255, 255, 255, 0.8);
   }
 }
-
 @media only screen and (min-width: 992px) {
   #mainNav {
     transition: background-color 0.2s;
@@ -66,7 +62,7 @@ body {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -67px;
+    top: -6.7rem;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
@@ -90,16 +86,14 @@ body {
     transform: translate3d(0, 100%, 0);
   }
 }
-
 header.masthead {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   background: no-repeat center center;
   background-color: #868e96;
   background-attachment: scroll;
   position: relative;
   background-size: cover;
 }
-
 header.masthead .overlay {
   position: absolute;
   top: 0;
@@ -109,89 +103,75 @@ header.masthead .overlay {
   background-color: #212529;
   opacity: 0.5;
 }
-
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  padding: 200px 0 150px;
+  padding: 20rem 0 15rem;
   color: white;
 }
-
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0;
+    padding: 20rem 0;
   }
 }
-
 header.masthead .page-heading,
 header.masthead .site-heading {
   text-align: center;
 }
-
 header.masthead .page-heading h1,
 header.masthead .site-heading h1 {
-  font-size: 50px;
+  font-size: 5rem;
   margin-top: 0;
 }
-
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 300;
   line-height: 1.1;
   display: block;
-  margin: 10px 0 0;
+  margin: 1rem 0 0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading h1,
   header.masthead .site-heading h1 {
-    font-size: 80px;
+    font-size: 8rem;
   }
 }
-
 header.masthead .post-heading h1 {
-  font-size: 35px;
+  font-size: 3.5rem;
 }
-
 header.masthead .post-heading .meta,
 header.masthead .post-heading .subheading {
   line-height: 1.1;
   display: block;
 }
-
 header.masthead .post-heading .subheading {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
-  margin: 10px 0 30px;
+  margin: 1rem 0 3rem;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 header.masthead .post-heading .meta {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 300;
   font-style: italic;
   font-family: 'Lora', 'Times New Roman', serif;
 }
-
 header.masthead .post-heading .meta a {
   color: #fff;
 }
-
 @media only screen and (min-width: 768px) {
   header.masthead .post-heading h1 {
-    font-size: 55px;
+    font-size: 5.5rem;
   }
   header.masthead .post-heading .subheading {
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
-
 /*-----Search Bar-----*/
-
 .search-text {
   padding: 0;
   text-align: center;
@@ -199,168 +179,139 @@ header.masthead .post-heading .meta a {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
-
 .search-text:hover {
   color: #4894C6;
   transition-duration: 2s;
 }
-
 .search {
   text-align: center;
   font-family: 'Trebuchet MS', 'Helvetica Neue';
-  padding-bottom: 15px;
-  padding-top: 15px;
-
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
-
 #pac-input {
-  border-radius: 10px;
+  border-radius: 1rem;
 }
-
 .button {
-  border-radius: 10px;
+  border-radius: 1rem;
 }
-
 /*-----Map-----*/
-
 #map {
-  min-height: 460px;
+  min-height: 46rem;
   width: 100%;
 }
-
-
 /*-----Dropdown Box-----*/
-
 .dropbtn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  border-radius: 10px;
+  border-radius: 1rem;
   background-color: #91C7ED;
   color: white;
-  padding: 7px;
-  font-size: 14px;
+  padding: .7rem;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
   transition-duration: 2s;
 }
-
 .dropbtn:hover,
 .dropbtn:focus {
   background-color: #4894C6;
 }
-
 .dropdown {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding-top: 15px;
+  padding-top: 1.5rem;
   text-align: center;
 }
-
 .dropdown-content {
-  border-radius: 10px;
+  border-radius: 1rem;
   display: none;
   text-align: center;
   background-color: #91C7ED;
-  font-size: 12px;
-  width: 143px;
+  font-size: 1.2rem;
+  width: 14.3rem;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin: auto;
 }
-
 .dropdown-content a {
   color: white;
-  padding: 12px 16px;
+  padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: block;
 }
-
 .dropdown a:hover {
   background-color: #4894C6;
 }
-
 .show {
   display: block;
 }
-
 #paris {
   display: none;
   padding-top: 1em;
 }
-
 #berlin {
   display: none;
   padding-top: 1em;
 }
-
 #athens {
   display: none;
   padding-top: 1em;
 }
-
 #pisa {
   display: none;
   padding-top: 1em;
 }
-
 #istanbul {
   display: none;
   padding-top: 1em;
 }
-
 /*-----Cards-----*/
 
-.fade1 {
-  display: none;
-  background-color: #91C7ED;
-}
-
-.fade2 {
-  display: none;
-  background-color: #91C7ED;
-}
-
-.fade3 {
-  display: none;
-  background-color: #91C7ED;
-}
-
 .card {
-  height: 600px;
+  height: 60px;
+  animation: fade-cards-in 2s ease-out;
+  margin-bottom: 0.5px;
 }
-
+@keyframes fade-cards-in {
+  0% {
+    opacity: .5;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 .card-img-top {
-  height: 20em;
+  height: 20rem;
 }
-
 .card-body {
   font-family: 'Trebuchet MS', 'Helvetica Neue';
   color: white;
+  background-color: #91C7ED;
 }
-
 .card-heading-center {
   text-align: center;
   font-weight: 500;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: underline;
 }
-
-
 .info-btn {
   position: relative;
   left: 38%;
   border-radius: 10px;
   background-color: #4894C6;
   color: white;
-  padding: 7px;
-  font-size: 14px;
+  padding: .7rem;
+  font-size: 1.4rem;
   border: none;
   cursor: pointer;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
-
 /*-----Heading Padding-----*/
-
 .heading-text {
   padding-top: 2em;
   text-align: center;
@@ -368,69 +319,53 @@ header.masthead .post-heading .meta a {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
-
 .heading-text:hover {
   color: #4894C6;
   transition-duration: 2s;
 }
-
 /*-----Form-----*/
-
 .form {
   padding-top: 1em;
   font-family: 'Trebuchet MS', 'Helvetica Neue';
 }
-
 .position {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
   font-family: 'Trebuchet MS', 'Helvetica Neue';
 }
-
 .border-btn {
-  padding: 5px 20px 5px 20px;
-  border-radius: 10px;
+  padding: .5rem 2rem .5rem 2rem;
+  border-radius: 1rem;
 }
-
-
 /*-----Footer-----*/
-
 .col-sm-6 {
   position: relative;
-  top: 12px;
-  height: 100px;
+  top: 1.2rem;
+  height: 10rem;
   font-family: 'Trebuchet MS', 'Helvetica Neue';
   color: white;
 }
-
-
 .footer {
   text-align: center;
   background-color: #91C7ED;
 }
-
 .footer-header {
   font-weight: bold;
   font-size: larger;
 }
-
-
 .footer-list {
   position: relative;
-  right: 21px;
+  right: 2.1rem;
   list-style-type: none;
 }
-
 .social-links {
   position: relative;
-  right: 8px;
+  right: .8rem;
 }
-
 /*-----Break-----*/
-
 .break {
   background-color: #4894C6;
   width: 30%;
-  height: 2px;
+  height: .2rem;
 }

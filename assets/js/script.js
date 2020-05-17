@@ -60,41 +60,44 @@ function myFunction() {
     document.getElementById("berlin").style.display = "block";
   }
   if (output == "athens") {
-    document.getElementById("berlin").style.display = "block";
+    document.getElementById("athens").style.display = "block";
   }
   if (output == "pisa") {
-    document.getElementById("berlin").style.display = "block";
+    document.getElementById("pisa").style.display = "block";
   }
   if (output == "istanbul") {
-    document.getElementById("berlin").style.display = "block";
+    document.getElementById("istanbul").style.display = "block";
   }
 }
 
 function disappear() {
   document.getElementById("paris").style.display = "none";
   document.getElementById("berlin").style.display = "none";
+  document.getElementById("athens").style.display = "none";
+  document.getElementById("pisa").style.display = "none";
+  document.getElementById("istanbul").style.display = "none";
 }
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
 
 
 //Fade in bootstrap cards
 
-$(document).ready(function() {
-  $(".dropbtn").click(function() {
-    $(".fade1").fadeIn(2000);
-    $(".fade2").fadeIn(3000);
-    $(".fade3").fadeIn(4000);
-  });
-});
+// $(document).ready(function() {
+//   $(".dropbtn").click(function() {
+//     $("#fade1").fadeIn(2000);
+//     $("#fade2").fadeIn(3000);
+//     $("#fade3").fadeIn(4000);
+//   });
+// });

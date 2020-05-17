@@ -20,7 +20,42 @@ Using all the skills i learnt on my last project (User-Centric Frontend) i was a
 
 ##### Features left to Implement
 
-* I would like to add in the fade effect to my bootstrap cards to give it a more interactive look
+* Give the bootstrap cards a more athentic/interactive look
 * Make the markers on map clickable for users to be able view information about the selected country/city
+
 # Technologies Used
+
+##### 1. HTML
+* Used to create the website.
+
+##### 2. CSS
+* This was used to style the website.
+
+##### 3. Font Awesome
+* Used to put icons throughout the website.
+
+
+##### 4. Bootstrap v. 4.2.1
+* Bootstrap Grid that I have deployed throughout the website, for it to be responsive on all platforms. 
+* Bootstrap Cards that I have also deployed throughout the website, to give it a more aesthetic look.
+* Bootstrap Form
+
+##### 5. Javascript
+
+* Added a Map with markers (Google Maps Places Javascript API)
+* Used to make my Dropdown box, Navbar and Contact Form (EmailJS)
+
+
+##### 6. Wireframes
+
+* Used to create template of my project.
+
+My Wireframe can be seen here
+
+[Desktop](https://wireframe.cc/a3mXEu)
+
+[Tablet](https://wireframe.cc/bgubF8)
+
+[Mobile](https://wireframe.cc/Nyrlf8)
+
 
