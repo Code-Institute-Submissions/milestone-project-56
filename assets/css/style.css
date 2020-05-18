@@ -24,7 +24,6 @@ body {
   color: #91C7ED;
 }
 #mainNav .navbar-nav>li.nav-item>a {
-  font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: .1rem;
   text-transform: uppercase;
@@ -62,7 +61,7 @@ body {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -6.7rem;
+    top: -5rem;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
@@ -268,10 +267,19 @@ header.masthead .post-heading .meta a {
 /*-----Cards-----*/
 
 .card {
-  height: 60px;
+  height: 40rem;
   animation: fade-cards-in 2s ease-out;
   margin-bottom: 0.5px;
 }
+
+/*@media only screen and (max-width: 991px) {*/
+/*  .card{*/
+/*    position: relative;*/
+/*    left:28%;*/
+/*    width: 40rem;*/
+/*  }*/
+/*}*/
+
 @keyframes fade-cards-in {
   0% {
     opacity: .5;
@@ -311,7 +319,9 @@ header.masthead .post-heading .meta a {
   cursor: pointer;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 /*-----Heading Padding-----*/
+
 .heading-text {
   padding-top: 2em;
   text-align: center;
@@ -323,7 +333,9 @@ header.masthead .post-heading .meta a {
   color: #4894C6;
   transition-duration: 2s;
 }
+
 /*-----Form-----*/
+
 .form {
   padding-top: 1em;
   font-family: 'Trebuchet MS', 'Helvetica Neue';
