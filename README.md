@@ -10,6 +10,30 @@ My goal in the design was to make website very easy to use website. The website 
 
 Using all the skills i learnt on my last project (User-Centric Frontend) i was able to make it responsive. Javascript is also implented throughout my page. It is used to view markers on the Google Maps API
 
+####  User Stories
+
+A new user can input a location on the search to see and find what countries we are flying too. A user can select the countries using a dropdown box. Once clicked you are able to see what activies we are providing for each country. 
+
+##### Strategy
+
+The main focus of this webpage was to create a user-friendly wepage where users can view the destinations and activies we are doing for each country and for them to be able to enquire with us.
+
+##### Scope
+
+The scope of the weppage is for users to easily view what destinations were flying too, view the acitivies/packages were providing for each page and being able to enquire about a certain destionation.
+
+##### Structure
+
+The structure of my dropdown box will display 3 cards for each country. These cards will provide activies for each selected country. Once another country it clicked. The previous country will no longer show but the new one clicked will be visible.
+
+##### Skeleton
+
+All my Wireframe can be viewed in my *Technologies Used* section.
+
+##### Surface
+
+I focused on giving my page a very light look. By using colours that resemble the "outdoors" for example, using blue for that sea/clear sky look.
+
 # Features
 
 ##### Existing Features
@@ -58,6 +82,51 @@ My Wireframe can be seen here
 
 [Mobile](https://wireframe.cc/Nyrlf8)
 
+# Testing
+
+I used AWS Cloud 9 to create my webpage. 
+
+I used the following to test if my code works:
+
+* https://validator.w3.org to validate my HTML
+* https://jigsaw.w3.org/css-validator to validate my CSS
+* https://jshint.com/ to validate my Javascript
+
+These test were done throughout my project from start to finish.
+
+I have tested my webpage on:
+
+* Internet Explorer
+* Safari
+* Mozilla Firefox
+* Google Chrome
+
+I created my web page on Google Chrome, with this i was able to use their developer tools to view my HTML or css, or even to find any console errors throughout my weboage. It was also used to see how my webpage looked in different screen sizes.
+
+I was able to view my webpage on these devices:
+
+* Moto G4
+* Galaxy S5
+* Pixel 2
+* Pixel 2 XL
+* iPhone 5/SE
+* iPhone 6/7/8
+* iPhone 6/7/8 Plus
+* iPhone X
+* iPad
+* iPad Pro
+
+##### Testing Links
+
+My aim was to make every link on my webpage go to another tab. I was able to do this by adding `target=_blank"` to my any links in my HTML.
+
+The 'required' attribute is added to the 'Name' 'Phone Number' and 'Email' fields, so if those fields are not filled in, the form will not submit.
+
+##### Debugging
+
+While i was working on this project i did run throught a few minor issues.
+
+One issue was that my map was not showing up, by simply adding a height class to it. I was able to make my map visible on the page. 
 
 
 
