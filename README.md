@@ -6,25 +6,25 @@ This website is a destination booking page. Where you pick a country, and view w
 
 # UX
 
-My goal in the design was to make website very easy to use website. The website only contains one page and it goes in a "step by step" order. From the title, to viewing the map, then to viewing what packages we do for each country, and then finally enquring using the contact form on what package the user wants.
+My goal in the design was to make website very easy to use website. The website only contains one page and it goes in a "step by step" order. From the title, to viewing the map, then to viewing what packages we do for each country, and then finally enquiring using the contact form on what package the user wants.
 
-Using all the skills i learnt on my last project (User-Centric Frontend) i was able to make it responsive. Javascript is also implented throughout my page. It is used to view markers on the Google Maps API
+Using all the skills i learnt on my last project (User-Centric Frontend) i was able to make it responsive. Javascript is also implemented throughout my page. It is used to view markers on the Google Maps API
 
 ####  User Stories
 
-A new user can input a location on the search to see and find what countries we are flying too. A user can select the countries using a dropdown box. Once clicked you are able to see what activies we are providing for each country. 
+A new user can input a location on the search to see and find what countries we are flying too. A user can select the countries using a dropdown box. Once clicked you are able to see what activities we are providing for each country. 
 
 ##### Strategy
 
-The main focus of this webpage was to create a user-friendly wepage where users can view the destinations and activies we are doing for each country and for them to be able to enquire with us.
+The main focus of this webpage was to create a user-friendly webpage where users can view the destinations and activities we are doing for each country and for them to be able to enquire with us.
 
 ##### Scope
 
-The scope of the weppage is for users to easily view what destinations were flying too, view the acitivies/packages were providing for each page and being able to enquire about a certain destionation.
+The scope of the webpage is for users to easily view what destinations were flying too, view the activities/packages were providing for each page and being able to enquire about a certain destination.
 
 ##### Structure
 
-The structure of my dropdown box will display 3 cards for each country. These cards will provide activies for each selected country. Once another country it clicked. The previous country will no longer show but the new one clicked will be visible.
+The structure of my dropdown box will display 3 cards for each country. These cards will provide activities for each selected country. Once another country it clicked. The previous country will no longer show but the new one clicked will be visible.
 
 ##### Skeleton
 
@@ -44,7 +44,7 @@ I focused on giving my page a very light look. By using colours that resemble th
 
 ##### Features left to Implement
 
-* Give the bootstrap cards a more athentic/interactive look
+* Give the bootstrap cards a more authentic/interactive look
 * Make the markers on map clickable for users to be able view information about the selected country/city
 
 # Technologies Used
@@ -101,7 +101,7 @@ I have tested my webpage on:
 * Mozilla Firefox
 * Google Chrome
 
-I created my web page on Google Chrome, with this i was able to use their developer tools to view my HTML or css, or even to find any console errors throughout my weboage. It was also used to see how my webpage looked in different screen sizes.
+I created my web page on Google Chrome, with this i was able to use their developer tools to view my HTML or CSS, or even to find any console errors throughout my webpage. It was also used to see how my webpage looked in different screen sizes.
 
 I was able to view my webpage on these devices:
 
@@ -120,13 +120,60 @@ I was able to view my webpage on these devices:
 
 My aim was to make every link on my webpage go to another tab. I was able to do this by adding `target=_blank"` to my any links in my HTML.
 
-The 'required' attribute is added to the 'Name' 'Phone Number' and 'Email' fields, so if those fields are not filled in, the form will not submit.
+The 'required' attribute were added to the 'Name' 'Phone Number' and 'Email' fields, so if those fields are not filled in, the form will not submit.
 
 ##### Debugging
 
-While i was working on this project i did run throught a few minor issues.
+While i was working on this project i did run through a few minor issues.
 
 One issue was that my map was not showing up, by simply adding a height class to it. I was able to make my map visible on the page. 
 
+# Deployment 
 
+I created a repository on GitHub. By doing this i was able to keep track of every key code i had added on my webpage. 
 
+You can view me GitHub [here](https://github.com/amit238/milestone-project-2)
+
+The initial steps to link my webpage to my repository were as followed:
+
+1. Made my environment using Cloud9.
+2. Created all my folders and files.
+3. Inside the terminal, I typed the following in this order `ls`, `git init`, `git add .` `git commit` this then created my initial commit.
+4. By using `git push` i was then able to link my page to a GitHub repository.
+
+To deploy this website to GitHub pages:
+
+Click on the *milestone-project-2* from my GitHub dashboard.
+Select *Settings* from the menu bar.
+Scroll down to *GitHub pages* section, I chose *master branch* from the dropdown menu.
+Once selected, The page was then refreshed. Then i by scrolling down back to *Github pages* i was able to see a link to my website
+
+Here is a link to my deployed website. [My Website](https://amit238.github.io/milestone-project-2/);
+
+**To run this project locally**
+
+* Go to my [GitHub Repository](https://github.com/amit238/milestone-project-2)
+* On the right hand side you will be able to see a *Clone or download* dropdown button. Click that.
+* Copy the URL provided from the dropdown.
+* Open up a terminal, move it to the directory you want.
+* Type `git clone` and paste the URL
+
+# Credits
+
+* To my mentor in helping me find a good responsive look on my text.
+* [StartBootstrap](https://startbootstrap.com/themes/clean-blog/) for providing me with my Navbar and the theme in the background.
+* [W3Schools](www.w3schools.com) for helping me with my HTML CSS and Javascript.
+* Using a Google Maps API to help me implement a map on my webpage.
+* Using EmailJS to connect my contact form with an actual email.
+
+##### Media
+
+All the images i used for my webpage came from Google images.
+
+##### Content
+
+All the information about each activity and country came from Wikipedia.
+
+# Acknowledgements
+
+Had inspirations to do this as I love travelling and would one day love to go to all the countries I have displayed on my webpage.
