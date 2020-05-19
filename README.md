@@ -45,7 +45,7 @@ I focused on giving my page a very light look. By using colours that resemble th
 ##### Features left to Implement
 
 * Give the bootstrap cards a more authentic/interactive look
-* Make the markers on map clickable for users to be able view information about the selected country/city
+* Make the markers on map clickable for users to be able view a name for each country.
 
 # Technologies Used
 
