@@ -7,11 +7,11 @@ function initAutocomplete() {
   // Cluster Markers
 
   const locations = [
-    { lat: 43.7228, lng: 10.4017, name: "Pisa" },
-    { lat: 41.015609, lng: 28.985123, name: "Istanbul" },
-    { lat: 48.8566, lng: 2.3522, name: "Paris" },
-    { lat: 37.9838, lng: 23.7275, name: "Athens" },
-    { lat: 52.5200, lng: 13.4050, name: "Berlin" }
+    { lat: 43.7228, lng: 10.4017, name: "Italy, Pisa" },
+    { lat: 41.015609, lng: 28.985123, name: "Turkey, Istanbul" },
+    { lat: 48.8566, lng: 2.3522, name: "France, Paris" },
+    { lat: 37.9838, lng: 23.7275, name: "Greece, Athens" },
+    { lat: 52.5200, lng: 13.4050, name: "Germany, Berlin" }
 
   ];
 
@@ -107,7 +107,7 @@ searchBox.addListener('places_changed', function() {
   });
   map.fitBounds(bounds);
 });
-}
+
 
 
 // Adding information of countries to maps
